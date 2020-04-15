@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+    --light-primary: #f9f6f7;
+    --light-secondary: #ffe8d6;
+    --purple: #543864;
+
+    --poppins: 'Poppins', sans-serif;
+    --oleo: 'Oleo Script', cursive;
+
+    font-family: var(--poppins);
+}
+body{
+    overflow-x: hidden;
+    overflow-y: auto;
+    cursor: default;
+}
+li{
+    list-style: none;
+}
+.container-fluid{
+    padding: 0px;
+    margin: 0px;
+}
