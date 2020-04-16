@@ -1,45 +1,91 @@
-.header, .intro-image{
-    height: 100vh;
-    width: 100%;
+.header,
+.intro-image {
+  height: 100vh;
+  width: 100%;
 }
-.intro-image{
-    object-fit: cover;
-    opacity: 0.8;
-    position: absolute;
-    z-index: -1;
+.intro-image {
+  object-fit: cover;
+  opacity: 0.8;
+  position: absolute;
+  z-index: -1;
 }
-.intro-space{
-    height: 100vh;
-    background: rgba(0,0,0, 0.8);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.intro-space {
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.not-this{
-    text-decoration: line-through;
-    text-decoration-color: var(--purple);  
+.not-this {
+  text-decoration: line-through;
+  text-decoration-color: var(--purple);
 }
-.name{
-    font-size: 2rem;
-    letter-spacing: 0.3rem;
-    word-spacing: 0.5rem;
-    margin-bottom: 0.4rem;
+.name {
+  font-size: 2rem;
+  letter-spacing: 0.3rem;
+  word-spacing: 0.5rem;
+  margin-bottom: 0.4rem;
 }
-.sub-text{
-    font-size: 0.8rem;
+.sub-text {
+  font-size: 0.8rem;
 }
-.custom-pos{
-    position: absolute;
-    right: 0px;
-    width: 30vh;
-    z-index: 2;
+.custom-pos {
+  position: absolute;
+  right: 0px;
+  width: 30vh;
+  z-index: 2;
 }
 
-@media screen and (max-width: 600px){
-    .custom-pos{
-        position: absolute;
-        left: 0px;
-        width: 100%;
-        z-index: 2;
-    }
+.about-me {
+  height: 70vh;
+}
+.about-me-parallex {
+  background-image: url("../assets/people-coffee-meeting-team-7096.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about-me-text {
+  background: var(--light-primary);
+  font-size: 0.9rem;
+  word-spacing: 3px;
+}
+#aboutMe {
+  border-bottom: 5px solid var(--purple);
+  letter-spacing: 0.1rem;
+}
+.my-image {
+  height: 80%;
+  width: 70%;
+  object-fit: cover;
+  align-self: center;
+}
+.about-me-pos {
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .custom-pos {
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    z-index: 2;
+  }
+  .about-me-text {
+    flex-direction: column;
+    background: var(--light-primary);
+    font-size: 0.9rem;
+    word-spacing: 3px;
+  }
+  .about-me{
+      height: 100%;
+  }
+  .my-image{
+      height: 70vh;
+      width: 100%;
+      margin-top: 10vh;
+  }
 }
