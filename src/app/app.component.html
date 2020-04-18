@@ -102,34 +102,33 @@
           (click)="showSkills('technical')"
           id="technical"
         >
-          Technical Skills
+          What I know
         </div>
         <div
           class="col-sm-2 custom-border p-3 text-center"
           (click)="showSkills('behavioral')"
           id="behavioral"
         >
-          Behavioral Skills
+          Who I am
         </div>
       </div>
-      <div class="row p-5 purple-border" id="skillRow">
-        <div class="col-xl-6">
-          <div *ngFor="let skill of technicalSkills1">
-            <div class="pb-3">
-              <div class="text-muted text-uppercase">{{ skill.name }}</div>
-              <div class="progress rounded-0">
-                <div class="progress-bar bg-purple" id="{{ skill.name }}"></div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div *ngIf="isTechnical" class="row p-5 purple-border" id="skillRow">
+        
+      </div>
 
-        <div class="col-xl-6">
-          <div *ngFor="let skill of technicalSkills2">
-            <div class="pb-3">
-              <div class="text-muted text-uppercase">{{ skill.name }}</div>
-              <div class="progress rounded-0">
-                <div class="progress-bar bg-purple" id="{{ skill.name }}"></div>
+      <div *ngIf="!isTechnical" class="row p-5 purple-border">
+        <div class="card-columns">
+          <div *ngFor="let card of cards;">
+            <div class="card mt-5">
+              <img
+                class="card-img-top card-img-size"
+                [src]="card.image"
+                alt="Card image"
+              />
+              <div class="card-body">
+                <h4 class="card-title">{{ card.heading }}</h4>
+                <p class="card-text custom-font text-muted">{{ card.desc }}</p>
+                <p class="card-text text-right custom-font text-muted">{{ card.owner }}</p>
               </div>
             </div>
           </div>

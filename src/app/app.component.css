@@ -71,7 +71,7 @@
   background-repeat: no-repeat;
 }
 .skills {
-  height: 120vh;
+  height: 180vh;
   background: var(--light-primary);
 }
 .custom-bg {
@@ -79,11 +79,10 @@
   color: white;
 }
 .custom-border {
-  border-bottom: 1px solid var(--purple);
   cursor: pointer;
 }
 .purple-border {
-  border: 1px solid var(--purple);
+  border-top: 1px solid var(--purple);
 }
 .outer-bar {
   height: 2vh;
@@ -91,6 +90,14 @@
 }
 .bg-purple{
     background: lightgray;
+}
+.custom-font{
+    font-size: 1.3rem;
+    font-family: var(--sacromento);
+}
+.card-img-size{
+    height: 30vh;
+    object-fit: cover;
 }
 
 @media screen and (max-width: 1200px) {
