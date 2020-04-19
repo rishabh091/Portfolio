@@ -24,3 +24,7 @@
 .btn-width {
   width: 300px;
 }
+.error-size{
+  font-size: 0.8rem;
+  opacity: 0;
+}
