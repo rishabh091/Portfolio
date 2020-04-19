@@ -7,9 +7,14 @@
     --light-primary: #f9f6f7;
     --light-secondary: #ffe8d6;
     --purple: #543864;
+    --hacking-green: #20C20E;
+    --black: #333333;
 
     --poppins: 'Poppins', sans-serif;
     --sacromento: 'Sacramento', cursive;
+    --bowlby: 'Bowlby One SC', cursive;
+
+    --black-coding-url: url('../src/assets/codingGif.gif');
 
     font-family: var(--poppins);
 }

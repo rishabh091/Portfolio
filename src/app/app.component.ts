@@ -133,6 +133,10 @@ export class AppComponent implements OnInit {
     {
       name: "mongo",
       experience: 50
+    },
+    {
+      name: "sqlite",
+      experience: 30
     }
   ];
   concepts=[
