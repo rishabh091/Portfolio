@@ -99,6 +99,36 @@
     height: 30vh;
     object-fit: cover;
 }
+.left-purple-border{
+    border-left: 1px solid var(--purple);
+}
+.loading-bar{
+    height: 20px;
+    width: 50%;
+}
+.tech-heading{
+    position: relative;
+    z-index: 2;
+}
+.card-size{
+    width: 300px;
+    height: 450px;
+}
+.img-height{
+    height: 250px;
+    object-fit: cover;
+}
+.cus-pos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+.cus-progress{
+    height: 20px;
+    background: lightgray;
+    width: 0%;
+}
 
 @media screen and (max-width: 1200px) {
   .custom-pos {
