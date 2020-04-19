@@ -53,7 +53,7 @@
   background: rgba(0, 0, 0, 0.5);
 }
 .cus-progress {
-  height: 20px;
+  height: 25px;
   background: lightgray;
   width: 0%;
   overflow: hidden;

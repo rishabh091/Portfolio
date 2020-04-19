@@ -1,0 +1,148 @@
+.header,
+.intro-image {
+  height: 100vh;
+  width: 100%;
+}
+.intro-image {
+  object-fit: cover;
+  opacity: 0.9;
+  position: absolute;
+  z-index: -1;
+}
+.intro-space {
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.not-this {
+  text-decoration: line-through;
+  text-decoration-color: var(--purple);
+}
+.name {
+  font-size: 2rem;
+  letter-spacing: 0.3rem;
+  word-spacing: 0.5rem;
+  margin-bottom: 0.4rem;
+}
+.sub-text {
+  font-size: 0.8rem;
+}
+.custom-pos {
+  position: absolute;
+  right: 0px;
+  width: 30vh;
+  z-index: 2;
+}
+
+.about-me {
+  height: 80vh;
+}
+.about-me-parallex {
+  background-image: url("../../assets/people-coffee-meeting-team-7096.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about-me-text {
+  height: 100vh;
+  background: var(--light-primary);
+}
+
+.skills-parallex {
+  background-image: url("../../assets/code-coding-computer-data-574073.jpg");
+  background-size: cover;
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.skills {
+  height: 180vh;
+  background: var(--light-primary);
+}
+.projects-page {
+  height: 100vh;
+  background: linear-gradient(
+      -70deg,
+      var(--hacking-green) 30%,
+      rgba(0, 0, 0, 0) 30%
+    ),
+    var(--black-coding-url);
+  background-size: cover;
+}
+.bowlby {
+  font-family: var(--bowlby);
+  font-size: 5rem;
+  color: white;
+}
+.btn-glow {
+  border: 1px solid var(--hacking-green);
+  outline: none;
+  width: 200px;
+  font-weight: bolder;
+  color: white;
+  background: black;
+}
+.btn-glow:hover {
+  box-shadow: 0px 0px 30px var(--hacking-green);
+}
+
+.contact-parallex {
+  background-image: url("../../assets/apple.jpg");
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+.contact {
+  background: var(--light-primary);
+  height: 100vh;
+}
+
+@media screen and (max-width: 1360px) {
+  .custom-pos {
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    z-index: 2;
+  }
+  .about-me,
+  .skills,
+  .contact {
+    height: 100%;
+  }
+  .about-me-parallex,
+  .contact-parallex {
+    display: none;
+  }
+  .projects-page {
+    height: 100%;
+    background: linear-gradient(
+        -70deg,
+        var(--hacking-green) 30%,
+        rgba(0, 0, 0, 0) 30%
+      ),
+      var(--black-coding-url);
+  }
+  .about-me-text {
+    height: 100%;
+  }
+  .outer-bar {
+    height: 2vh;
+    width: 30vh;
+  }
+  .card-size {
+    height: 450px;
+    width: 100%;
+  }
+  .bowlby {
+    font-family: var(--bowlby);
+    font-size: 3rem;
+    color: white;
+  }
+}
