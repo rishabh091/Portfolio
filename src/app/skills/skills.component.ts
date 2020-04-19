@@ -131,7 +131,7 @@ export class SkillsComponent implements OnInit {
       experience: 100
     },
     {
-      name: "mongo",
+      name: "mongodb",
       experience: 50
     },
     {
