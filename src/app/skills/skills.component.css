@@ -1,0 +1,60 @@
+.heading {
+  font-size: 2rem;
+  word-spacing: 0.5rem;
+  border-bottom: 6px solid var(--purple);
+}
+.custom-bg {
+  background: var(--purple);
+  color: white;
+}
+.custom-border {
+  cursor: pointer;
+}
+.purple-border {
+  border-top: 1px solid var(--purple);
+}
+.outer-bar {
+  height: 2vh;
+  width: 50vh;
+}
+.bg-purple {
+  background: lightgray;
+}
+.custom-font {
+  font-size: 1.3rem;
+  font-family: var(--sacromento);
+}
+.card-img-size {
+  height: 30vh;
+  object-fit: cover;
+}
+.left-purple-border {
+  border-left: 1px solid var(--purple);
+}
+.loading-bar {
+  height: 20px;
+  width: 50%;
+}
+.tech-heading {
+  position: relative;
+  z-index: 2;
+}
+.card-size {
+  height: 450px;
+}
+.img-height {
+  height: 250px;
+  object-fit: cover;
+}
+.cus-pos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+}
+.cus-progress {
+  height: 20px;
+  background: lightgray;
+  width: 0%;
+  overflow: hidden;
+}
