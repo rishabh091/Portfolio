@@ -1,0 +1,11 @@
+.scroll-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: 1px solid orange;
+  opacity: 0;
+  outline: none;
+  background: var(--light-secondary);
+  cursor: default;
+}

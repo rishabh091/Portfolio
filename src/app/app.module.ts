@@ -11,6 +11,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './home/home.component';
+import { ScrollBtnComponent } from './scroll-btn/scroll-btn.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { HomeComponent } from './home/home.component';
     ContactComponent,
     FooterComponent,
     ProjectsComponent,
-    HomeComponent
+    HomeComponent,
+    ScrollBtnComponent
   ],
   imports: [
     BrowserModule,
