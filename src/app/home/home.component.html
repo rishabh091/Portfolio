@@ -63,7 +63,9 @@
         </div>
         <div class="text-light">I WOULD LOVE TO SHOW YOU MY WORK</div>
 
-        <button type="button" class="btn-glow mt-4 p-2" (click)="toProjects()">See Projects</button>
+        <button type="button" class="btn-glow mt-4 p-2" (click)="toProjects()">
+          See Projects
+        </button>
       </div>
     </div>
   </div>
@@ -75,3 +77,14 @@
 
   <app-footer></app-footer>
 </div>
+
+<button
+  type="button"
+  class="scroll-btn rounded shadow-lg p-2"
+  id="scrollBtn"
+  (click)="toTop()"
+>
+  <span class="material-icons">
+    keyboard_arrow_up
+  </span>
+</button>

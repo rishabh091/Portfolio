@@ -1,3 +1,8 @@
+<div *ngIf="showError" class="alert alert-danger alert-dismissible fade show sticky-top">
+  <button type="button" class="close" data-dismiss="alert">&times;</button>
+  <div class="text-center">Please fill correct details.</div>
+</div>
+
 <div class="container p-5 text-muted">
   <div class="text-center container-fluid mb-5">
     . . . but I am more of a human in real life,
@@ -13,7 +18,7 @@
 
   <div class="container-fluid mt-5 d-flex justify-content-center">
     <div>
-      <div class="contact-heading">Or I can contact you too . .</div>
+      <div class="contact-heading text-center">Or I can contact you too . .</div>
       <div class="mt-4">
         <input
           type="text"
@@ -22,7 +27,7 @@
           (keyup)="enterName($event)"
         />
       </div>
-      <div class="mt-3">
+      <div class="mt-4">
         <input
           type="email"
           placeholder="email"
@@ -30,7 +35,7 @@
           (keyup)="enterEmail($event)"
         />
       </div>
-      <div class="mt-3">
+      <div class="mt-4">
         <textarea
           class="p-2 contact-textarea text-muted"
           placeholder="don't be shy, say something"
@@ -38,7 +43,11 @@
         ></textarea>
       </div>
 
-      <button type="button" class="btn btn-info rounded-0 mt-3 btn-width" (click)="sendForm()">
+      <button
+        type="button"
+        class="btn btn-info rounded-0 mt-4 btn-width"
+        (click)="sendForm()"
+      >
         Send
       </button>
     </div>

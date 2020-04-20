@@ -13,6 +13,8 @@ export class ContactComponent implements OnInit {
 
   constructor() { }
 
+  showError=false;
+
   ngOnInit() {
   }
 
@@ -43,7 +45,11 @@ export class ContactComponent implements OnInit {
     if(this.isValidated(this.name) &&
       this.isEmailValidated(this.email) &&
       this.isValidated(this.desc)){
+        this.showError=false;
         alert("mail sent");
+      }
+      else{
+        this.showError=true;
       }
   }
 
