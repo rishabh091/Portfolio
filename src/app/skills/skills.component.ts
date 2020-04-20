@@ -5,7 +5,8 @@ import { Component, OnInit } from "@angular/core";
   templateUrl: "./skills.component.html",
   styleUrls: ["./skills.component.css"]
 })
-export class SkillsComponent implements OnInit {
+export class SkillsComponent implements OnInit{
+
   skills = "technical";
   className = "custom-bg";
   isTechnical = true;
@@ -151,15 +152,19 @@ export class SkillsComponent implements OnInit {
     {
       name: "data structures",
       experience: 90
+    },
+    {
+      name: "software engineering",
+      experience: 100
     }
   ];
 
   constructor() {}
 
   ngOnInit() {
-    window.addEventListener("load", () => {
-      this.showTechSkills();
-    });
+  }
+  ngAfterViewInit(){
+    this.showTechSkills();
   }
 
   showTechSkills() {

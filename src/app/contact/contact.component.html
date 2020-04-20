@@ -22,7 +22,6 @@
           (keyup)="enterName($event)"
         />
       </div>
-      <div class="error-size text-danger">Enter correct name</div>
       <div class="mt-3">
         <input
           type="email"
@@ -31,7 +30,6 @@
           (keyup)="enterEmail($event)"
         />
       </div>
-      <div class="error-size text-danger">Enter correct email</div>
       <div class="mt-3">
         <textarea
           class="p-2 contact-textarea text-muted"
@@ -39,7 +37,6 @@
           (keyup)="enterDesc($event)"
         ></textarea>
       </div>
-      <div class="error-size text-danger">Enter correct description</div>
 
       <button type="button" class="btn btn-info rounded-0 mt-3 btn-width" (click)="sendForm()">
         Send
