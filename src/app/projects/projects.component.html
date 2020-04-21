@@ -1,1 +1,46 @@
-<p>projects works!</p>
+<div class="container-fluid">
+  <h1 class="display-5 letter-spacing p-5 bg-purple text-light">
+    PROJECT SCRAPBOOK
+  </h1>
+
+  <div *ngFor="let project of projects; index as i;" class="container-fluid">
+    <div class="container-fluid d-flex pl-5 pr-5 bg-primary-light text-right" [id]="i">
+      <div class="container-fluid position-relative cus-div-width">
+        <div class="flip-card position-absolute first-card">
+          <div class="flip-card-inner shadow">
+            <div class="flip-card-front"></div>
+            <div class="flip-card-back">
+              <img [src]="project.image1" class="img-fluid cus-width" />
+            </div>
+          </div>
+        </div>
+        <div class="flip-card position-absolute second-card">
+          <div class="flip-card-inner shadow">
+            <div class="flip-card-front"></div>
+            <div class="flip-card-back">
+              <img [src]="project.image2" class="img-fluid cus-width" />
+            </div>
+          </div>
+        </div>
+        <div class="flip-card position-absolute third-card">
+          <div class="flip-card-inner shadow">
+            <div class="flip-card-front"></div>
+            <div class="flip-card-back">
+              <img [src]="project.image3" class="img-fluid cus-width" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid p-4 custom-z-index">
+        <div class="heading title">{{ project.title }}</div>
+        <div class="text-muted small-font">{{ project.subHeading }}</div>
+        <div class="container-fluid mt-3 text-muted">{{ project.desc }}</div>
+        <div class="mt-5">
+          <a [href]="project.link1" target="_blank">Code Angular</a>
+          <a class="ml-3" [href]="project.link2" target="_blank" [id]="project.link2">Code Springboot</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
