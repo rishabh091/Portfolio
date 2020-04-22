@@ -7,24 +7,6 @@
 .icon-size:hover {
   opacity: 1;
 }
-.contact-heading {
-  font-size: 1.2rem;
-}
-.contact-input,
-.contact-textarea {
-  font-size: 0.8rem;
-  width: 300px;
-}
-.contact-input {
-  background: transparent;
-  border: none;
-  outline: none;
-  border-bottom: 1px solid var(--black);
-}
-.btn-width {
-  width: 300px;
-}
-.error-size{
-  font-size: 0.8rem;
-  opacity: 0;
+.center-align{
+  align-items: center;
 }

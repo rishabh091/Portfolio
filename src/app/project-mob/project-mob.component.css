@@ -1,0 +1,18 @@
+.custom-size {
+  height: 50vh;
+  width: auto;
+}
+.img-size {
+  height: 50vh;
+  width: 100%;
+  object-fit: contain;
+}
+.project-heading {
+  font-size: 2rem;
+}
+.subheading {
+  font-size: 0.8rem;
+}
+.bg-primary-light {
+  background: var(--light-primary);
+}

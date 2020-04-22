@@ -1,45 +1,40 @@
 <div class="container-fluid">
-  <h1 class="display-5 letter-spacing p-5 bg-purple text-light">
+  <h1 class="display-5 p-5 bg-purple text-light">
+    <span
+      class="material-icons back-icon rounded-circle p-3"
+      (click)="backToHome()"
+    >
+      arrow_back_ios
+    </span>
     PROJECT SCRAPBOOK
   </h1>
+</div>
 
-  <div *ngFor="let project of projects; index as i;" class="container-fluid">
-    <div class="container-fluid d-flex pl-5 pr-5 bg-primary-light text-right" [id]="i">
-      <div class="container-fluid position-relative cus-div-width">
-        <div class="flip-card position-absolute first-card">
-          <div class="flip-card-inner shadow">
-            <div class="flip-card-front"></div>
-            <div class="flip-card-back">
-              <img [src]="project.image1" class="img-fluid cus-width" />
-            </div>
-          </div>
-        </div>
-        <div class="flip-card position-absolute second-card">
-          <div class="flip-card-inner shadow">
-            <div class="flip-card-front"></div>
-            <div class="flip-card-back">
-              <img [src]="project.image2" class="img-fluid cus-width" />
-            </div>
-          </div>
-        </div>
-        <div class="flip-card position-absolute third-card">
-          <div class="flip-card-inner shadow">
-            <div class="flip-card-front"></div>
-            <div class="flip-card-back">
-              <img [src]="project.image3" class="img-fluid cus-width" />
-            </div>
-          </div>
-        </div>
-      </div>
+<div class="container-fluid pc">
+  <app-project-pc></app-project-pc>
+</div>
 
-      <div class="container-fluid p-4 custom-z-index">
-        <div class="heading title">{{ project.title }}</div>
-        <div class="text-muted small-font">{{ project.subHeading }}</div>
-        <div class="container-fluid mt-3 text-muted mb-5">{{ project.desc }}</div>
-        <a *ngFor="let links of project.links; index as linkIndex" class="mt-5">
-          <a [href]="links" target="_blank" class="mr-3">Code{{ linkIndex+1 }}</a>
-        </a>
-      </div>
-    </div>
+<div class="container-fluid mob">
+  <app-project-mob></app-project-mob>
+</div>
+
+<div class="container-fluid p-5 bg-primary-light">
+  <div class="container-fluid text-center text-muted">
+    But thats not all,
+    <p>See rest of my projects on my github</p>
+    <p class="mt-3">
+      Even you can contribute to some of them, It would be lovely working on
+      something with you
+    </p>
+
+    <a href="https://github.com/rishabh091" target="_blank"
+      ><img
+        src="../../assets/github.png"
+        class="icon img-fluid mt-5"
+        alt="github_icon"
+    /></a>
   </div>
 </div>
+
+<app-footer></app-footer>
+<app-scroll-btn></app-scroll-btn>

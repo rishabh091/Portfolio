@@ -1,0 +1,48 @@
+<div class="container-fluid">
+  <div *ngFor="let project of projects; index as i" class="container-fluid">
+    <div
+      class="container d-flex justify-content-center bg-primary-light text-right master-div"
+      [id]="i"
+    >
+      <div class="container-fluid cus-div-width">
+        <div class="flip-card position-absolute first-card">
+          <div class="flip-card-inner shadow">
+            <div class="flip-card-front"></div>
+            <div class="flip-card-back">
+              <img [src]="project.images[0]" class="img-fluid cus-width" />
+            </div>
+          </div>
+        </div>
+        <div class="flip-card position-absolute second-card">
+          <div class="flip-card-inner shadow">
+            <div class="flip-card-front"></div>
+            <div class="flip-card-back">
+              <img [src]="project.images[1]" class="img-fluid cus-width" />
+            </div>
+          </div>
+        </div>
+        <div class="flip-card position-absolute third-card">
+          <div class="flip-card-inner shadow">
+            <div class="flip-card-front"></div>
+            <div class="flip-card-back">
+              <img [src]="project.images[2]" class="img-fluid cus-width" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid custom-z-index p-3">
+        <div class="heading title">{{ project.title }}</div>
+        <div class="text-muted small-font">{{ project.subHeading }}</div>
+        <div class="container-fluid mt-3 text-muted mb-5">
+          {{ project.desc }}
+        </div>
+        <a *ngFor="let links of project.links; index as linkIndex" class="mt-5">
+          <a [href]="links" target="_blank" class="mr-3"
+            >Code{{ linkIndex + 1 }}</a
+          >
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

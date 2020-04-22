@@ -1,0 +1,52 @@
+<div class="container-fluid bg-primary-light pt-4">
+  <div *ngFor="let project of projects; index as i">
+    <div class="container-fluid" [id]="i+''">
+      <div
+        [id]="project.title"
+        class="carousel slide mb-4"
+        data-ride="carousel"
+      >
+        <!-- The slideshow -->
+        <div class="carousel-inner custom-size">
+          <div class="carousel-item active">
+            <img [src]="project.images[0]" class="img-size" />
+          </div>
+          <div class="carousel-item">
+            <img [src]="project.images[1]" class="img-size" />
+          </div>
+          <div class="carousel-item">
+            <img [src]="project.images[2]" class="img-size" />
+          </div>
+          <div class="carousel-item">
+            <img [src]="project.images[3]" class="img-size" />
+          </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a
+          class="carousel-control-prev"
+          [href]="'#' + project.title"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a
+          class="carousel-control-next"
+          [href]="'#' + project.title"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+
+      <div class="container p-4">
+        <p class="text-center project-heading">{{ project.title }}</p>
+        <p class="text-center subheading text-muted mb-4">{{ project.subHeading }}</p>
+        <p class="mb-5">{{ project.desc }}</p>
+        <span *ngFor="let link of project.links; index as linkIndex">
+            <a [href]="link" target="_blank" class="mr-4">Code{{ linkIndex+1 }}</a>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>

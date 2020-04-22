@@ -12,6 +12,8 @@ import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './home/home.component';
 import { ScrollBtnComponent } from './scroll-btn/scroll-btn.component';
+import { ProjectPcComponent } from './project-pc/project-pc.component';
+import { ProjectMobComponent } from './project-mob/project-mob.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { ScrollBtnComponent } from './scroll-btn/scroll-btn.component';
     FooterComponent,
     ProjectsComponent,
     HomeComponent,
-    ScrollBtnComponent
+    ScrollBtnComponent,
+    ProjectPcComponent,
+    ProjectMobComponent
   ],
   imports: [
     BrowserModule,
