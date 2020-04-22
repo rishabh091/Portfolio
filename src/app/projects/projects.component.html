@@ -35,11 +35,10 @@
       <div class="container-fluid p-4 custom-z-index">
         <div class="heading title">{{ project.title }}</div>
         <div class="text-muted small-font">{{ project.subHeading }}</div>
-        <div class="container-fluid mt-3 text-muted">{{ project.desc }}</div>
-        <div class="mt-5">
-          <a [href]="project.link1" target="_blank">Code Angular</a>
-          <a class="ml-3" [href]="project.link2" target="_blank" [id]="project.link2">Code Springboot</a>
-        </div>
+        <div class="container-fluid mt-3 text-muted mb-5">{{ project.desc }}</div>
+        <a *ngFor="let links of project.links; index as linkIndex" class="mt-5">
+          <a [href]="links" target="_blank" class="mr-3">Code{{ linkIndex+1 }}</a>
+        </a>
       </div>
     </div>
   </div>
