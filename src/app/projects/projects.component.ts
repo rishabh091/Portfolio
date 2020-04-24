@@ -9,7 +9,10 @@ import { Router } from "@angular/router";
 export class ProjectsComponent implements OnInit {
   constructor(private router: Router) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    document.body.scrollTop=0;
+    document.documentElement.scrollTop=0;
+  }
   backToHome() {
     this.router.navigate(["/portfolio"]);
   }

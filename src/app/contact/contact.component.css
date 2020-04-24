@@ -10,3 +10,9 @@
 .center-align{
   align-items: center;
 }
+
+@media screen and (max-width: 750px){
+  .icon-size{
+    display: none;
+  }
+}
