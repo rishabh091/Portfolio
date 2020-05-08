@@ -36,8 +36,7 @@ export class SkillsComponent implements OnInit{
     {
       image: "../assets/comm.jpg",
       heading: "Good Listener",
-      desc:
-        "The most important thing in communication is to hear what isn’t being said.",
+      desc: "The most important thing in communication is to hear what isn’t being said.",
       owner: "- Peter F. Drucker"
     },
     {
@@ -110,8 +109,16 @@ export class SkillsComponent implements OnInit{
       experience: 75
     },
     {
+      name: "nodejs",
+      experience: 70
+    },
+    {
       name: "android",
       experience: 25
+    },
+    {
+      name: "express",
+      experience: 60
     },
     {
       name: "hibernate",
